@@ -1,0 +1,41 @@
+[{
+	"name": "wadie",
+	"age": 13,
+	"available": true,
+	"picture": "content/img/img1.jpg"
+}, {
+	"name": "yassine",
+	"age": 12,
+	"available": true,
+	"picture": "content/img/img2.jpg"
+}, {
+	"name": "lina",
+	"age": 12,
+	"available": false,
+	"picture": "content/img/img3.jpg"
+}, {
+	"name": "badro",
+	"age": 32,
+	"available": false,
+	"picture": "content/img/img4.jpg"
+}, {
+	"name": "fati",
+	"age": 42,
+	"available": true,
+	"picture": "content/img/img3.jpg"
+}, {
+	"name": "lara",
+	"age": 4,
+	"available": false,
+	"picture": "content/img/img2.jpg"
+}, {
+	"name": "king",
+	"age": 6,
+	"available": true,
+	"picture": "content/img/img3.svg"
+}, {
+	"name": "queen",
+	"age": 7,
+	"available": false,
+	"picture": "content/img/img1.jpg"
+}]

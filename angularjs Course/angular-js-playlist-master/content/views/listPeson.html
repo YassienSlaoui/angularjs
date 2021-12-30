@@ -1,0 +1,31 @@
+<div class="content" ng-init="numbers=[1,2,3];kol=['hello'] ">
+    <input type="text" ng-model="name" placeholder="enter your name">
+    <p>Your name is {{name}}</p><!--Data Binding-->
+    <p>{{numbers[0]}} {{kol[0]}}  {{hamid.name}}</p><!--Expression-->
+    <div ng-controller="myFirstConroler">
+      <p>Ng Repeat</p>
+      <button ng-click="order = 'name'">Order By Name </button>
+      <button ng-click="order='age'">Order By Age </button>
+      <input type="text" ng-model="search">
+      <ul id="personList">
+        
+        <li ng-repeat="number in hamid |orderBy:order|filter:search" ng-show="number.available"> <!-- (-)mean reverse of normal order -->
+             <img ng-src="{{number.picture}}" style="margin: -12px 10px 0px 0px;float:left;width: 50px;"/>
+          {{number.name}} - {{number.age |currency:'years'}}
+              <div class="remove" ng-click="remove(number)">X</div>
+        </li >
+      </ul>
+      <button  ng-click="removeAll()">Delete All</button>
+      <p>{{message}}</p>
+      <form ng-submit=addPerson()>
+        <input type="text" name="name" ng-model="newPerson.name">
+        <input type="number" name="age" ng-model="newPerson.age">
+        <input type="url" ng-model="newPerson.picture" >
+        <select name="availableSelect" ng-model="newPerson.available">
+          <option value="false">False</option>
+          <option value="true">True</option>
+        </select>
+        <input type="submit" value="Add Person">
+      </form>
+    </div>
+  </div>

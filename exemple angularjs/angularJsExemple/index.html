@@ -1,0 +1,27 @@
+<!DOCTYPE html ng-app>
+<html lang="en" ng-app="myFormulaireModule">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <base href="/"/>
+    <header ng-include="'header.html'"></header>
+    <div class="container">
+        <main ng-view></main>
+    </div>
+   
+     <script src="app\lib\angular.min.js"></script>
+    <script src="app\lib\angular-route.min.js"></script>
+    <script src="app\lib\angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="app/lib/jquery.min.js"></script>
+    <script src="app\lib\bootstrap.min.js"></script>
+    <script src="app\app.js"></script>
+</body>
+</html>

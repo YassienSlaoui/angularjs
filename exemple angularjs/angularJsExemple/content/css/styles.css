@@ -1,0 +1,21 @@
+.modal.in .modal-dialog{
+    margin-top: 20%;
+}
+.homePage{
+    background-image: url('/content/img/welcome.jpg');
+    width: 100%;
+    height:calc(100% - 72px);
+    height: -o-calc(100% - 72px); /* opera */
+height: -webkit-calc(100% - 72px); /* google, safari */
+height: -moz-calc(100% - 72px); /* firefox */
+}
+html body{
+    height: 100%;
+}
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}

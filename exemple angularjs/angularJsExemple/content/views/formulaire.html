@@ -1,0 +1,35 @@
+<form name="formulair"  novalidate ng-submit='addUser()'>
+    <div class="form-group">
+      <label for="exampleInputusername">Username</label>
+      <input type="text" class="form-control" id="exampleInputusername" ng-required="true"  
+      placeholder="Enter username" name="username" ng-model="formulaire.username">
+      <div ng-show="formulair.username.$touched && formulair.username.$invalid">
+        <span style="color: red; display: block; text-align: center;">Enter username</span>
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputBirthday">Birthday</label>
+      <input type="date" class="form-control" id="exampleInputPassword1" 
+      ng-required="true" placeholder="Birthday" name="birthday" ng-model="formulaire.birthday">
+      <div ng-show="formulair.birthday.$touched && formulair.birthday.$invalid">
+        <span style="color: red; display: block; text-align: center;">Enter bithday</span>
+      </div>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail" ng-required="true"
+         placeholder="Enter email" name="email" ng-model ="formulaire.email">
+        <div ng-show="formulair.email.$touched && formulair.email.$invalid">
+            <span style="color: red; display: block; text-align: center;">Enter email</span>
+        </div>
+    </div>
+    <div class="form-group">
+            
+  </div>
+    <button type="submit" class="btn btn-primary" ng-click="open()" ng-disabled="formulair.$invalid">Submit</button>
+    
+
+  </form>
+
+  <button  class="btn btn-primary" ng-click="consoleShow()" >show</button>
+  
